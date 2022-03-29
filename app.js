@@ -4,6 +4,8 @@ const jokeText = document.querySelector('.section .jokebox .p');
 
 //監聽按鈕，並執行函式。
 button.addEventListener('click', getJoke);
+//載入頁面先執行函式domcontentloaded
+document.addEventListener('DOMContentLoaded', getJoke);
 
 async function getJoke() {
 
